@@ -119,7 +119,7 @@ function HashSumOfPermutations(str) {
         The given string has a length <code>n</code> of <code>3</code>, which generates <code>n! -> 3! = 6</code> possible permutations. If we observe the same property in different strings, we notice a pattern where <i>each (non-unique) character</i> occurs <code>(n - 1)!</code> times <i>at every position in the string</i> across all permutations.
     </p>
     <p>
-        As a result, we can skip the brute-force permutation calculation and get the sum of each hash of every permutation of a string by getting the <i>sum of <b>each character's hash at all positions</b> multiplied by the <b>number of times it will occur at each position</b></i>.
+        As a result, we can skip the brute-force permutation calculation and get the sum of each hash of every permutation of a string by getting the <i>sum of <b>each character raised to the power of each position</b> multiplied by the <b>number of times it will occur at each position</b></i>.
     </p>
     <pre>
 function CheatSum(str) {
